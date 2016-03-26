@@ -2,7 +2,7 @@
 /**
  * Meetup.com Importer for The Events Calendar Custom Post Type
  *
- * @version 0.1.0
+ * @version 0.2.0
  * @package Meetup.com Importer for The Events Calendar
  */
 
@@ -11,14 +11,14 @@ class TMI_CPT {
 	 * Parent plugin class
 	 *
 	 * @var class
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	protected $plugin = null;
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -31,7 +31,7 @@ class TMI_CPT {
 	/**
 	 * Registers the custom post type for holding imports.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function register_cpt() {

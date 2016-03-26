@@ -1,7 +1,7 @@
 <?php
 /**
  * Meetup.com Importer for The Events Calendar Cron
- * @version 0.1.0
+ * @version 0.2.0
  * @package Meetup.com Importer for The Events Calendar
  */
 
@@ -10,14 +10,14 @@ class TMI_Cron {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $plugin = null;
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -29,7 +29,7 @@ class TMI_Cron {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -40,7 +40,7 @@ class TMI_Cron {
 	/**
 	 * Delete the cron job for this import.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $post_id
 	 * @return void
 	 */
@@ -57,7 +57,7 @@ class TMI_Cron {
 	/**
 	 * If this is a new import being saved, set up a cron job for it.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $post_id
 	 * @param  $post
 	 * @param  $update

@@ -1,7 +1,7 @@
 <?php
 /**
  * Meetup.com Importer for The Events Calendar Import Settings
- * @version 0.1.0
+ * @version 0.2.0
  * @package Meetup.com Importer for The Events Calendar
  */
 
@@ -10,14 +10,14 @@ class TMI_Import_Settings {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $plugin = null;
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -29,7 +29,7 @@ class TMI_Import_Settings {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -42,7 +42,7 @@ class TMI_Import_Settings {
 	/**
 	 * Allow TEC to save our options on the Import Settings screen
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return array
 	 */
 	public function add_to_available_import_options( $options = array() ) {
@@ -53,7 +53,7 @@ class TMI_Import_Settings {
 	/**
 	 * Register tab on The Events Calendar import page
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return array
 	 */
 	public function add_meetup_import_tab( $tabs = array() ) {
@@ -64,7 +64,7 @@ class TMI_Import_Settings {
 	/**
 	 * Display content for import tab
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function display_tab_content() {
@@ -77,7 +77,7 @@ class TMI_Import_Settings {
 	/**
 	 * Display content for import tab
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function add_import_settings_fields( $fields = array() ) {

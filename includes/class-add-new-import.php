@@ -1,7 +1,7 @@
 <?php
 /**
  * Meetup.com Importer for The Events Calendar Add New Import
- * @version 0.1.0
+ * @version 0.2.0
  * @package Meetup.com Importer for The Events Calendar
  */
 
@@ -10,7 +10,7 @@ class TMI_Add_New_Import {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $plugin = null;
 
@@ -18,14 +18,14 @@ class TMI_Add_New_Import {
 	 * Error messages to send back as admin notices
 	 *
 	 * @var   string
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $errors = array();
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -37,7 +37,7 @@ class TMI_Add_New_Import {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -51,7 +51,7 @@ class TMI_Add_New_Import {
 	/**
 	 * Process the "new import" form
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function handle_form() {
@@ -81,7 +81,7 @@ class TMI_Add_New_Import {
 	/**
 	 * Create the import using our CPT
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param $url Meetup Group URL
 	 * @param $cats array of event category term IDs
 	 * @return void
@@ -123,7 +123,7 @@ class TMI_Add_New_Import {
 	/**
 	 * Show an error message if the URL was not formatted correctly.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function send_error_messages() {
@@ -139,7 +139,7 @@ class TMI_Add_New_Import {
 	/**
 	 * Show success message
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function send_success_message() {
@@ -153,7 +153,7 @@ class TMI_Add_New_Import {
 	/**
 	 * Make sure the URLs are in a standard format
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $url
 	 * @return string
 	 */

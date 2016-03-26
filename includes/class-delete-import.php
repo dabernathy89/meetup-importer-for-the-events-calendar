@@ -1,7 +1,7 @@
 <?php
 /**
  * Meetup.com Importer for The Events Calendar Delete Import
- * @version 0.1.0
+ * @version 0.2.0
  * @package Meetup.com Importer for The Events Calendar
  */
 
@@ -10,14 +10,14 @@ class TMI_Delete_Import {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $plugin = null;
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -29,7 +29,7 @@ class TMI_Delete_Import {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -39,7 +39,7 @@ class TMI_Delete_Import {
 	/**
 	 * Delete import if we should
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function maybe_delete_import() {
@@ -53,7 +53,7 @@ class TMI_Delete_Import {
 	/**
 	 * Handle the actual deletion
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function handle_deletion() {
@@ -70,7 +70,7 @@ class TMI_Delete_Import {
 	/**
 	 * Show success message
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function send_success_message() {
@@ -84,7 +84,7 @@ class TMI_Delete_Import {
 	/**
 	 * Check if the current action is telling us to delete an import
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function should_delete_import() {

@@ -3,7 +3,7 @@
 **Tags:**
 **Requires at least:** 4.4
 **Tested up to:**      4.4
-**Stable tag:**        0.1.0
+**Stable tag:**        0.2.0
 **License:**           GPLv2
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,5 +20,5 @@ Automatically import events from Meetup.com into The Events Calendar.
 
 ## Changelog ##
 
-### 0.1.0 ###
-* First release
+### 0.2.0 ###
+* Initial public release

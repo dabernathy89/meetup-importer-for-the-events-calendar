@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Meetup.com Importer for The Events Calendar
  * Description: Automatically import events from Meetup.com into The Events Calendar.
- * Version:     0.1.0
+ * Version:     0.2.0
  * Author:      dabernathy89
  * Author URI:  https://danielabernathy.com
  * License:     GPLv2
@@ -36,7 +36,7 @@
 /**
  * Autoloads files with classes when needed
  *
- * @since  NEXT
+ * @since  0.2.0
  * @param  string $class_name Name of the class being requested.
  * @return void
  */
@@ -58,7 +58,7 @@ spl_autoload_register( 'tec_meetup_autoload_classes' );
 /**
  * Main initiation class
  *
- * @since  NEXT
+ * @since  0.2.0
  * @var  string $version  Plugin version
  * @var  string $basename Plugin basename
  * @var  string $url      Plugin URL
@@ -70,15 +70,15 @@ class Tec_Meetup_Importer {
 	 * Current version
 	 *
 	 * @var  string
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
-	const VERSION = '0.1.0';
+	const VERSION = '0.2.0';
 
 	/**
 	 * URL of plugin directory
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	protected $url = '';
 
@@ -86,7 +86,7 @@ class Tec_Meetup_Importer {
 	 * Path of plugin directory
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	protected $path = '';
 
@@ -94,7 +94,7 @@ class Tec_Meetup_Importer {
 	 * Plugin basename
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	protected $basename = '';
 
@@ -102,7 +102,7 @@ class Tec_Meetup_Importer {
 	 * Plugin slug
 	 *
 	 * @var string
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	public $slug = 'tec-meetup';
 
@@ -110,14 +110,14 @@ class Tec_Meetup_Importer {
 	 * Singleton instance of plugin
 	 *
 	 * @var Tec_Meetup_Importer
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	protected static $single_instance = null;
 
 	/**
 	 * Instance of TMI_Import_Settings
 	 *
-	 * @since NEXT
+	 * @since 0.2.0
 	 * @var TMI_Import_Settings
 	 */
 	protected $import_settings;
@@ -125,7 +125,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Instance of TMI_CPT
 	 *
-	 * @since NEXT
+	 * @since 0.2.0
 	 * @var TMI_CPT
 	 */
 	protected $import_cpt;
@@ -133,7 +133,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Instance of TMI_Add_New_Import
 	 *
-	 * @since NEXT
+	 * @since 0.2.0
 	 * @var TMI_Add_New_Import
 	 */
 	protected $add_new_import;
@@ -141,7 +141,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Instance of TMI_Delete_Import
 	 *
-	 * @since NEXT
+	 * @since 0.2.0
 	 * @var TMI_Delete_Import
 	 */
 	protected $delete_import;
@@ -149,7 +149,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Instance of TMI_Cron
 	 *
-	 * @since NEXT
+	 * @since 0.2.0
 	 * @var TMI_Cron
 	 */
 	protected $cron;
@@ -157,7 +157,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Instance of TMI_Importer
 	 *
-	 * @since NEXT
+	 * @since 0.2.0
 	 * @var TMI_Importer
 	 */
 	protected $importer;
@@ -165,7 +165,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Creates or returns an instance of this class.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return Tec_Meetup_Importer A single instance of this class.
 	 */
 	public static function get_instance() {
@@ -179,7 +179,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Sets up our plugin
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 */
 	protected function __construct() {
 		$this->basename = plugin_basename( __FILE__ );
@@ -192,7 +192,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Attach other plugin classes to the base plugin class.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function plugin_classes() {
@@ -208,7 +208,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Add hooks and filters
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -227,7 +227,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Activate the plugin
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function _activate() {
@@ -239,7 +239,7 @@ class Tec_Meetup_Importer {
 	 * Deactivate the plugin
 	 * Uninstall routines should be in uninstall.php
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function _deactivate() {}
@@ -247,7 +247,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Init hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function init() {
@@ -260,7 +260,7 @@ class Tec_Meetup_Importer {
 	 * Check if the plugin meets requirements and
 	 * disable it if they are not present.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return boolean result of meets_requirements
 	 */
 	public function check_requirements() {
@@ -281,7 +281,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Deactivates this plugin, hook this function on admin_init.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function deactivate_me() {
@@ -291,7 +291,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Check that all plugin requirements are met
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return boolean True if requirements are met.
 	 */
 	public static function meets_requirements() {
@@ -304,7 +304,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Adds a notice to the dashboard if the plugin requirements are not met
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function requirements_not_met_notice() {
@@ -317,7 +317,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Magic getter for our object.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param string $field Field to get.
 	 * @throws Exception Throws an exception if the field is invalid.
 	 * @return mixed
@@ -344,7 +344,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Include a file from the includes directory
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  string $filename Name of the file to be included.
 	 * @return bool   Result of include call.
 	 */
@@ -359,7 +359,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * This plugin's directory
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  string $path (optional) appended path.
 	 * @return string       Directory and path
 	 */
@@ -372,7 +372,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * This plugin's url
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  string $path (optional) appended path.
 	 * @return string       URL and path
 	 */
@@ -387,7 +387,7 @@ class Tec_Meetup_Importer {
  * Grab the Tec_Meetup_Importer object and return it.
  * Wrapper for Tec_Meetup_Importer::get_instance()
  *
- * @since  NEXT
+ * @since  0.2.0
  * @return Tec_Meetup_Importer  Singleton instance of plugin class.
  */
 function tec_meetup() {

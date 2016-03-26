@@ -1,7 +1,7 @@
 <?php
 /**
  * Meetup.com Importer for The Events Calendar Importer
- * @version 0.1.0
+ * @version 0.2.0
  * @package Meetup.com Importer for The Events Calendar
  */
 
@@ -10,7 +10,7 @@ class TMI_Importer {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $plugin = null;
 
@@ -18,14 +18,14 @@ class TMI_Importer {
 	 * Array of country codes to country names
 	 *
 	 * @var   array
-	 * @since NEXT
+	 * @since 0.2.0
 	 */
 	protected $countries = array();
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -37,7 +37,7 @@ class TMI_Importer {
 	/**
 	 * Do the scheduled import for a Meetup group.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $post_id
 	 * @return void
 	 */
@@ -79,7 +79,7 @@ class TMI_Importer {
 	/**
 	 * Turn a Meetup.com event into a The Events Calendar event.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $event
 	 * @return void
 	 */
@@ -104,7 +104,7 @@ class TMI_Importer {
 	/**
 	 * Retrieve an event by the Meetup event ID
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $meetup_event_id
 	 * @return int|false
 	 */
@@ -129,7 +129,7 @@ class TMI_Importer {
 	/**
 	 * Build the array args for the tribe_create_event and tribe_update_event functions
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $event
 	 * @param  $group_slug
 	 * @return array
@@ -181,7 +181,7 @@ class TMI_Importer {
 	/**
 	 * Get the args for creating a new venue or using an existing one.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $event
 	 * @return void
 	 */
@@ -227,7 +227,7 @@ class TMI_Importer {
 	/**
 	 * Given a meetup.com URL, return the group slug
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $post_id
 	 * @return void
 	 */
@@ -250,7 +250,7 @@ class TMI_Importer {
 	/**
 	 * Helper function to replace the first occurrence of a string.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @param  $needle
 	 * @param  $replace
 	 * @param  $haystack
@@ -270,7 +270,7 @@ class TMI_Importer {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.2.0
 	 * @return void
 	 */
 	public function hooks() {
