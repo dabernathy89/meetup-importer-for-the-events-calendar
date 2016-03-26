@@ -1,0 +1,26 @@
+{
+  "name": "tec-meetup",
+  "title": "Meetup.com Importer for The Events Calendar",
+  "version": "0.1.0",
+  "description": "Automatically import events from Meetup.com into The Events Calendar.",
+  "author": {
+    "name": "Daniel Abernathy",
+    "url": "https://danielabernathy.com"
+  },
+  "license": "GPLv2",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "latest",
+    "grunt-text-replace": "latest",
+    "grunt-wp-i18n": "latest",
+    "gruntify-eslint": "^2.0.0",
+    "load-grunt-tasks": "latest"
+  },
+  "scripts": {
+    "version": "grunt version && git add ."
+  }
+}
