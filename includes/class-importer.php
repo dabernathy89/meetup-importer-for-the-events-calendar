@@ -68,7 +68,7 @@ class TMI_Importer {
 			$events = json_decode( $response['body'], true );
 			if ( is_array( $events ) ) {
 				foreach ( $events as $event ) {
-					$this->create_event( $event, $group_slug );
+					$this->create_event( $event, $group_slug, $post_id );
 				}
 			}
 		}
@@ -77,13 +77,13 @@ class TMI_Importer {
 	}
 
 	/**
-	 * Turn a Meetup.com event into a The Events Calendar event.
+	 * Create or update a The Events Calendar event from a Meetup.com event.
 	 *
 	 * @since  0.2.0
 	 * @param  $event
 	 * @return void
 	 */
-	public function create_event( $event = array(), $group_slug = '' ) {
+	public function create_event( $event = array(), $group_slug = '', $post_id = null ) {
 		if ( $event && is_array( $event ) && array_key_exists('id', $event) ) {
 
 			$args = $this->build_args_for_event( $event, $group_slug );
@@ -93,9 +93,33 @@ class TMI_Importer {
 			if ( $existing_event_id ) {
 				tribe_update_event( $existing_event_id, $args );
 			} else {
-				$new_event_id = tribe_create_event( $args );
-				if ( $new_event_id ) {
-					update_post_meta( $new_event_id, '_tec_meetup_import_event_id', $event['id'] );
+				$this->create_new_event( $event, $args, $post_id );
+			}
+		}
+	}
+
+	/**
+	 * Create a new event.
+	 *
+	 * @since  NEXT
+	 * @param  $meetup_event_id
+	 * @return int|false
+	 */
+	public function create_new_event( $event = array(), $args = array(), $post_id = null ) {
+		$new_event_id = tribe_create_event( $args );
+		if ( $new_event_id ) {
+			update_post_meta( $new_event_id, '_tec_meetup_import_event_id', $event['id'] );
+
+			// Associate the event categories from the import to this new event.
+			$event_cats = wp_get_post_terms( $post_id, 'tribe_events_cat' );
+			if ( !is_wp_error( $event_cats ) ) {
+				$term_ids = array();
+				foreach ( $event_cats as $event_cat ) {
+					$term_ids[] = $event_cat->term_id;
+				}
+
+				if ( !empty( $term_ids ) ) {
+					wp_set_object_terms( $new_event_id, $term_ids, 'tribe_events_cat' );
 				}
 			}
 		}
