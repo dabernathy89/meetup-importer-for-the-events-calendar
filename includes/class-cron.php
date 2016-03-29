@@ -1,7 +1,7 @@
 <?php
 /**
  * Event Importer for Meetup and The Events Calendar Cron
- * @version 0.2.2
+ * @version 0.2.3
  * @package Event Importer for Meetup and The Events Calendar
  */
 

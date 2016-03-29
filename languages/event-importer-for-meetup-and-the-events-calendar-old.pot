@@ -2,11 +2,11 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Event Importer for Meetup and The Events Calendar 0.2.2\n"
+"Project-Id-Version: Event Importer for Meetup and The Events Calendar 0.2.3\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/event-importer-for-meetup-and-the-"
 "events-calendar\n"
-"POT-Creation-Date: 2016-03-29 03:18:45+00:00\n"
+"POT-Creation-Date: 2016-03-29 05:01:41+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,150 +17,185 @@ msgstr ""
 
 #: includes/class-add-new-import.php:73
 #: release/0.2.1/includes/class-add-new-import.php:73
+#: release/0.2.2/includes/class-add-new-import.php:73
 msgid "Error: Please check the formatting of the Meetup Group URL."
 msgstr ""
 
 #: includes/class-add-new-import.php:94
 #: release/0.2.1/includes/class-add-new-import.php:94
+#: release/0.2.2/includes/class-add-new-import.php:94
 msgid "Error: An import already exists for that Meetup.com group."
 msgstr ""
 
 #: includes/class-add-new-import.php:114
 #: release/0.2.1/includes/class-add-new-import.php:114
+#: release/0.2.2/includes/class-add-new-import.php:114
 msgid "There was an error creating the import: "
 msgstr ""
 
 #: includes/class-add-new-import.php:148
 #: release/0.2.1/includes/class-add-new-import.php:148
+#: release/0.2.2/includes/class-add-new-import.php:148
 msgid "Successfully created Meetup.com group import."
 msgstr ""
 
 #: includes/class-cpt.php:41 includes/class-cpt.php:42
 #: release/0.2.1/includes/class-cpt.php:41
 #: release/0.2.1/includes/class-cpt.php:42
+#: release/0.2.2/includes/class-cpt.php:41
+#: release/0.2.2/includes/class-cpt.php:42
 msgid "Meetup Imports"
 msgstr ""
 
 #: includes/class-cpt.php:43 release/0.2.1/includes/class-cpt.php:43
+#: release/0.2.2/includes/class-cpt.php:43
 msgid "Meetup Import Archives"
 msgstr ""
 
 #: includes/class-cpt.php:44 release/0.2.1/includes/class-cpt.php:44
+#: release/0.2.2/includes/class-cpt.php:44
 msgid "Parent Meetup Import:"
 msgstr ""
 
 #: includes/class-cpt.php:45 release/0.2.1/includes/class-cpt.php:45
+#: release/0.2.2/includes/class-cpt.php:45
 msgid "All Meetup Imports"
 msgstr ""
 
 #: includes/class-cpt.php:46 release/0.2.1/includes/class-cpt.php:46
+#: release/0.2.2/includes/class-cpt.php:46
 msgid "Add New Meetup Import"
 msgstr ""
 
 #: includes/class-cpt.php:47 release/0.2.1/includes/class-cpt.php:47
+#: release/0.2.2/includes/class-cpt.php:47
 msgid "Add New"
 msgstr ""
 
 #: includes/class-cpt.php:48 release/0.2.1/includes/class-cpt.php:48
+#: release/0.2.2/includes/class-cpt.php:48
 msgid "New Meetup Import"
 msgstr ""
 
 #: includes/class-cpt.php:49 release/0.2.1/includes/class-cpt.php:49
+#: release/0.2.2/includes/class-cpt.php:49
 msgid "Edit Meetup Import"
 msgstr ""
 
 #: includes/class-cpt.php:50 release/0.2.1/includes/class-cpt.php:50
+#: release/0.2.2/includes/class-cpt.php:50
 msgid "Update Meetup Import"
 msgstr ""
 
 #: includes/class-cpt.php:51 release/0.2.1/includes/class-cpt.php:51
+#: release/0.2.2/includes/class-cpt.php:51
 msgid "View Meetup Import"
 msgstr ""
 
 #: includes/class-cpt.php:52 release/0.2.1/includes/class-cpt.php:52
+#: release/0.2.2/includes/class-cpt.php:52
 msgid "Search Meetup Import"
 msgstr ""
 
 #: includes/class-cpt.php:53 release/0.2.1/includes/class-cpt.php:53
+#: release/0.2.2/includes/class-cpt.php:53
 msgid "Not found"
 msgstr ""
 
 #: includes/class-cpt.php:54 release/0.2.1/includes/class-cpt.php:54
+#: release/0.2.2/includes/class-cpt.php:54
 msgid "Not found in Trash"
 msgstr ""
 
 #: includes/class-cpt.php:55 release/0.2.1/includes/class-cpt.php:55
+#: release/0.2.2/includes/class-cpt.php:55
 msgid "Featured Image"
 msgstr ""
 
 #: includes/class-cpt.php:56 release/0.2.1/includes/class-cpt.php:56
+#: release/0.2.2/includes/class-cpt.php:56
 msgid "Set featured image"
 msgstr ""
 
 #: includes/class-cpt.php:57 release/0.2.1/includes/class-cpt.php:57
+#: release/0.2.2/includes/class-cpt.php:57
 msgid "Remove featured image"
 msgstr ""
 
 #: includes/class-cpt.php:58 release/0.2.1/includes/class-cpt.php:58
+#: release/0.2.2/includes/class-cpt.php:58
 msgid "Use as featured image"
 msgstr ""
 
 #: includes/class-cpt.php:59 release/0.2.1/includes/class-cpt.php:59
+#: release/0.2.2/includes/class-cpt.php:59
 msgid "Insert into item"
 msgstr ""
 
 #: includes/class-cpt.php:60 release/0.2.1/includes/class-cpt.php:60
+#: release/0.2.2/includes/class-cpt.php:60
 msgid "Uploaded to this item"
 msgstr ""
 
 #: includes/class-cpt.php:61 release/0.2.1/includes/class-cpt.php:61
+#: release/0.2.2/includes/class-cpt.php:61
 msgid "Meetup Imports list"
 msgstr ""
 
 #: includes/class-cpt.php:62 release/0.2.1/includes/class-cpt.php:62
+#: release/0.2.2/includes/class-cpt.php:62
 msgid "Meetup Imports list navigation"
 msgstr ""
 
 #: includes/class-cpt.php:63 release/0.2.1/includes/class-cpt.php:63
+#: release/0.2.2/includes/class-cpt.php:63
 msgid "Filter items list"
 msgstr ""
 
 #: includes/class-cpt.php:66 release/0.2.1/includes/class-cpt.php:66
+#: release/0.2.2/includes/class-cpt.php:66
 msgid "Meetup Import"
 msgstr ""
 
 #: includes/class-delete-import.php:79
 #: release/0.2.1/includes/class-delete-import.php:79
+#: release/0.2.2/includes/class-delete-import.php:79
 msgid "Successfully deleted Meetup.com group import."
 msgstr ""
 
 #: includes/class-import-settings.php:60
 #: release/0.2.1/includes/class-import-settings.php:60
+#: release/0.2.2/includes/class-import-settings.php:60
 msgid "Meetup.com"
 msgstr ""
 
 #: includes/class-import-settings.php:87
 #: release/0.2.1/includes/class-import-settings.php:87
+#: release/0.2.2/includes/class-import-settings.php:87
 msgid "Meetup.com Import Settings"
 msgstr ""
 
 #: includes/class-import-settings.php:95
 #: release/0.2.1/includes/class-import-settings.php:95
+#: release/0.2.2/includes/class-import-settings.php:95
 msgid "Default status to use for imported events"
 msgstr ""
 
 #: includes/class-import-settings.php:103
 #: release/0.2.1/includes/class-import-settings.php:103
+#: release/0.2.2/includes/class-import-settings.php:103
 msgid "Meetup.com API Key"
 msgstr ""
 
 #: includes/class-saved-imports-table.php:33
 #: release/0.2.1/includes/class-saved-imports-table.php:33
+#: release/0.2.2/includes/class-saved-imports-table.php:33
 msgid "URL"
 msgstr ""
 
 #: includes/class-saved-imports-table.php:34
 #: release/0.2.1/includes/class-saved-imports-table.php:34
+#: release/0.2.2/includes/class-saved-imports-table.php:34
 msgid "Categories"
 msgstr ""
 
@@ -171,7 +206,7 @@ msgid ""
 "requirements are available."
 msgstr ""
 
-#: tec-meetup.php:303
+#: release/0.2.2/tec-meetup.php:303 tec-meetup.php:303
 msgid ""
 "Event Importer for Meetup and The Events Calendar requires The Events "
 "Calendar to be installed and activated. The plugin has been <a "
@@ -195,17 +230,20 @@ msgid "https://danielabernathy.com"
 msgstr ""
 
 #: includes/class-cpt.php:39 release/0.2.1/includes/class-cpt.php:39
+#: release/0.2.2/includes/class-cpt.php:39
 msgctxt "Post Type General Name"
 msgid "Meetup Imports"
 msgstr ""
 
 #: includes/class-cpt.php:40 release/0.2.1/includes/class-cpt.php:40
+#: release/0.2.2/includes/class-cpt.php:40
 msgctxt "Post Type Singular Name"
 msgid "Meetup Import"
 msgstr ""
 
 #: includes/class-saved-imports-table.php:73
 #: release/0.2.1/includes/class-saved-imports-table.php:73
+#: release/0.2.2/includes/class-saved-imports-table.php:73
 msgctxt "List table row action"
 msgid "Delete"
 msgstr ""

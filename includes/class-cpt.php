@@ -2,7 +2,7 @@
 /**
  * Event Importer for Meetup and The Events Calendar Custom Post Type
  *
- * @version 0.2.2
+ * @version 0.2.3
  * @package Event Importer for Meetup and The Events Calendar
  */
 
