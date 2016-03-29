@@ -185,8 +185,6 @@ class Tec_Meetup_Importer {
 		$this->basename = plugin_basename( __FILE__ );
 		$this->url      = plugin_dir_url( __FILE__ );
 		$this->path     = plugin_dir_path( __FILE__ );
-
-		$this->plugin_classes();
 	}
 
 	/**
@@ -204,17 +202,6 @@ class Tec_Meetup_Importer {
 		$this->cron = new TMI_Cron( $this );
 		$this->importer = new TMI_Importer( $this );
 	} // END OF PLUGIN CLASSES FUNCTION
-
-	/**
-	 * Add hooks and filters
-	 *
-	 * @since  0.2.0
-	 * @return void
-	 */
-	public function hooks() {
-		add_action( 'init', array( $this, 'init' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_css' ) );
-	}
 
 	public function enqueue_admin_css( $hook ) {
 	    if ( $hook !== 'tribe_events_page_events-importer' ) {
@@ -253,6 +240,8 @@ class Tec_Meetup_Importer {
 	public function init() {
 		if ( $this->check_requirements() ) {
 			load_plugin_textdomain( 'tec-meetup', false, dirname( $this->basename ) . '/languages/' );
+			$this->plugin_classes();
+			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_css' ) );
 		}
 	}
 
@@ -296,8 +285,8 @@ class Tec_Meetup_Importer {
 	 */
 	public static function meets_requirements() {
 		if ( class_exists( 'Tribe__Events__Main' ) ) {
-		return true;
-	}
+			return true;
+		}
 
 		return false;
 	}
@@ -396,7 +385,7 @@ function tec_meetup() {
 }
 
 // Kick it off.
-add_action( 'plugins_loaded', array( tec_meetup(), 'hooks' ) );
+add_action( 'plugins_loaded', array( tec_meetup(), 'init' ) );
 
 register_activation_hook( __FILE__, array( tec_meetup(), '_activate' ) );
 register_deactivation_hook( __FILE__, array( tec_meetup(), '_deactivate' ) );
