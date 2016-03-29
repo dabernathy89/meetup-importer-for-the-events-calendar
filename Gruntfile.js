@@ -37,7 +37,13 @@ module.exports = function (grunt) {
                 options: {
                     domainPath: '/languages/',
                     potFilename: pkg.name + '.pot',
-                    type: 'wp-plugin'
+                    type: 'wp-plugin',
+                    processPot: function( pot, options ) {
+                        console.log(pot.headers);
+                        pot.headers['report-msgid-bugs-to'] = 'https://wordpress.org/support/plugin/event-importer-for-meetup-and-the-events-calendar';
+                        return pot;
+                    }
+
                 }
             }
         },
