@@ -295,10 +295,11 @@ class Tec_Meetup_Importer {
 	 * @return boolean True if requirements are met.
 	 */
 	public static function meets_requirements() {
-		// Do checks for required classes / functions
-		// function_exists('') & class_exists('').
-		// We have met all requirements.
+		if ( class_exists( 'Tribe__Events__Main' ) ) {
 		return true;
+	}
+
+		return false;
 	}
 
 	/**
@@ -310,7 +311,7 @@ class Tec_Meetup_Importer {
 	public function requirements_not_met_notice() {
 		// Output our error.
 		echo '<div id="message" class="error">';
-		echo '<p>' . sprintf( __( 'Event Importer for Meetup and The Events Calendar is missing requirements and has been <a href="%s">deactivated</a>. Please make sure all requirements are available.', 'tec-meetup' ), admin_url( 'plugins.php' ) ) . '</p>';
+		echo '<p>' . sprintf( __( 'Event Importer for Meetup and The Events Calendar requires The Events Calendar to be installed and activated. The plugin has been <a href="%s">deactivated</a>.', 'tec-meetup' ), admin_url( 'plugins.php' ) ) . '</p>';
 		echo '</div>';
 	}
 
