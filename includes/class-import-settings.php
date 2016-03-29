@@ -36,7 +36,8 @@ class TMI_Import_Settings {
 		add_filter( 'tribe_import_tabs', array( $this, 'add_meetup_import_tab' ) );
 		add_action( 'tribe_import_render_tab_' . $this->plugin->slug, array( $this, 'display_tab_content' ) );
 		add_action( 'tribe_import_general_settings', array( $this, 'add_import_settings_fields' ), 30 );
-		add_filter( 'tribe_import_available_options', array($this, 'add_to_available_import_options') );
+		add_filter( 'tribe_import_available_options', array( $this, 'add_to_available_import_options') );
+		add_filter( 'tribe_field_output_text', array( $this, 'add_placeholder_to_text_field'), 20, 3 );
 	}
 
 	/**
@@ -47,6 +48,7 @@ class TMI_Import_Settings {
 	 */
 	public function add_to_available_import_options( $options = array() ) {
 		$options[] = 'meetup_api_key';
+		$options[] = 'meetup_link_text';
 		return $options;
 	}
 
@@ -105,6 +107,14 @@ class TMI_Import_Settings {
 				'parent_option' => Tribe__Events__Main::OPTIONNAME,
 				'importer_type' => 'meetup',
 			),
+			'meetup_link_text' => array(
+				'type' => 'text',
+				'label' => __( 'Meetup.com event link text', 'tec-meetup' ),
+				'tooltip' => __( 'Leave blank if you do not want to display links to Meetup.com on events', 'tec-meetup' ),
+				'validation_type' => 'textarea',
+				'parent_option' => Tribe__Events__Main::OPTIONNAME,
+				'importer_type' => 'meetup',
+			),
 			'tec-meetup-form-content-end' => array(
 				'type' => 'html',
 				'html' => '</div>',
@@ -112,5 +122,26 @@ class TMI_Import_Settings {
 		);
 
 		return array_merge( $fields, $meetup_import_settings_fields );
+	}
+
+	/**
+	 * Add option to display links to the Meetup.com page for each event
+	 *
+	 * @since  NEXT
+	 * @return array
+	 */
+	public function add_placeholder_to_text_field( $field, $id, $foo ) {
+		if ( $id === 'meetup_link_text' ) {
+			$name_field = 'name="meetup_link_text"';
+			$name_attr_pos = strpos( $field, $name_field );
+			$field = substr_replace(
+				$field,
+				' placeholder="' . __( 'Ex: View on Meetup.com', 'tec-meetup' ) . '"',
+				$name_attr_pos + strlen($name_field),
+				0
+			);
+		}
+
+		return $field;
 	}
 }
