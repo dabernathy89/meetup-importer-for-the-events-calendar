@@ -2,7 +2,7 @@
   "generator-plugin-wp": {
     "name": "Event Importer for Meetup and The Events Calendar",
     "description": "Automatically import events from Meetup.com into The Events Calendar.",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "author": "dabernathy89",
     "authoremail": "daniel@danielabernathy.com",
     "authorurl": "https://danielabernathy.com",

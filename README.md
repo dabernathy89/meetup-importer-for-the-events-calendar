@@ -44,6 +44,9 @@ I am not affiliated with Meetup, Inc or Modern Tribe (developers of The Events C
 
 ## Changelog ##
 
+### 0.3.0 ###
+* Add option to display an event's Meetup.com link
+
 ### 0.2.3 ###
 * Add screenshots to readme.
 
