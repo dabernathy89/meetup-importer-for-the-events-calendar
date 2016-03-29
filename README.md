@@ -30,6 +30,11 @@ This plugin is built using the `generator-plugin-wp` Yo generator built by WebDe
 
 I am not affiliated with Meetup, Inc or Modern Tribe (developers of The Events Calendar). This plugin is not endorsed, sponsored, or certified by Meetup, Inc or Modern Tribe. I really hope they like it though.
 
+## Screenshots ##
+
+1. On the main import settings screen you can set your Meetup.com API Key and the default status of imported events.
+2. On the Meetup.com import tab, you can set up recurring imports. Enter the URL of the meetup group and choose Event Categories that its events will be a part of.
+
 ## Installation ##
 
 ### Manual Installation ###
@@ -38,6 +43,9 @@ I am not affiliated with Meetup, Inc or Modern Tribe (developers of The Events C
 2. Activate Event Importer for Meetup and The Events Calendar through the 'Plugins' menu in WordPress.
 
 ## Changelog ##
+
+### 0.2.3 ###
+* Add screenshots to readme.
 
 ### 0.2.2 ###
 * Map event categories on import, update readme, code cleanup
