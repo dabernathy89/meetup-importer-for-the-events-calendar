@@ -128,7 +128,7 @@ class TMI_Import_Settings {
 	 * Add option to display links to the Meetup.com page for each event
 	 *
 	 * @since  NEXT
-	 * @return array
+	 * @return string
 	 */
 	public function add_placeholder_to_text_field( $field, $id, $foo ) {
 		if ( $id === 'meetup_link_text' ) {
