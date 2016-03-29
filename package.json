@@ -1,7 +1,7 @@
 {
   "name": "event-importer-for-meetup-and-the-events-calendar-old",
   "title": "Event Importer for Meetup and The Events Calendar",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Automatically import events from Meetup.com into The Events Calendar.",
   "author": {
     "name": "Daniel Abernathy",

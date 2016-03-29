@@ -1,7 +1,7 @@
 <?php
 /**
  * Event Importer for Meetup and The Events Calendar Add New Import
- * @version 0.2.1
+ * @version 0.2.2
  * @package Event Importer for Meetup and The Events Calendar
  */
 

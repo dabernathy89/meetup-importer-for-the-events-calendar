@@ -1,7 +1,7 @@
 <?php
 /**
  * Event Importer for Meetup and The Events Calendar Importer
- * @version 0.2.1
+ * @version 0.2.2
  * @package Event Importer for Meetup and The Events Calendar
  */
 
@@ -101,7 +101,7 @@ class TMI_Importer {
 	/**
 	 * Create a new event.
 	 *
-	 * @since  NEXT
+	 * @since  0.2.2
 	 * @param  $meetup_event_id
 	 * @return int|false
 	 */
