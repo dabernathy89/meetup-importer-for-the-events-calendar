@@ -1,7 +1,7 @@
 <?php
 /**
  * Event Importer for Meetup and The Events Calendar Import Settings
- * @version 0.2.3
+ * @version 0.3.0
  * @package Event Importer for Meetup and The Events Calendar
  */
 
@@ -127,7 +127,7 @@ class TMI_Import_Settings {
 	/**
 	 * Add option to display links to the Meetup.com page for each event
 	 *
-	 * @since  NEXT
+	 * @since  0.3.0
 	 * @return string
 	 */
 	public function add_placeholder_to_text_field( $field, $id, $foo ) {

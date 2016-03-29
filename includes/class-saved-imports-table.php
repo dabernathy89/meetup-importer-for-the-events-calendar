@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Event Importer for Meetup and The Events Calendar Saved Imports Table
- * @version 0.2.3
+ * @version 0.3.0
  * @package Event Importer for Meetup and The Events Calendar
  */
 

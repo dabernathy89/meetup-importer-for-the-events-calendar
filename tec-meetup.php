@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Event Importer for Meetup and The Events Calendar
  * Description: Automatically import events from Meetup.com into The Events Calendar.
- * Version:     0.2.3
+ * Version:     0.3.0
  * Author:      dabernathy89
  * Author URI:  https://danielabernathy.com
  * License:     GPLv2
@@ -72,7 +72,7 @@ class Tec_Meetup_Importer {
 	 * @var  string
 	 * @since  0.2.0
 	 */
-	const VERSION = '0.2.3';
+	const VERSION = '0.3.0';
 
 	/**
 	 * URL of plugin directory
@@ -165,7 +165,7 @@ class Tec_Meetup_Importer {
 	/**
 	 * Instance of TMI_Event_Display
 	 *
-	 * @since NEXT
+	 * @since 0.3.0
 	 * @var TMI_Event_Display
 	 */
 	protected $event_display;

@@ -1,7 +1,7 @@
 <?php
 /**
  * Event Importer for Meetup and The Events Calendar Event Display
- * @version 0.2.3
+ * @version 0.3.0
  * @package Event Importer for Meetup and The Events Calendar
  */
 
@@ -10,14 +10,14 @@ class TMI_Event_Display {
 	 * Parent plugin class
 	 *
 	 * @var   class
-	 * @since NEXT
+	 * @since 0.3.0
 	 */
 	protected $plugin = null;
 
 	/**
 	 * Constructor
 	 *
-	 * @since  NEXT
+	 * @since  0.3.0
 	 * @param  object $plugin Main plugin object.
 	 * @return void
 	 */
@@ -29,7 +29,7 @@ class TMI_Event_Display {
 	/**
 	 * Initiate our hooks
 	 *
-	 * @since  NEXT
+	 * @since  0.3.0
 	 * @return void
 	 */
 	public function hooks() {
@@ -39,7 +39,7 @@ class TMI_Event_Display {
 	/**
 	 * Add the Meetup.com link to an event if the link text is set.
 	 *
-	 * @since  NEXT
+	 * @since  0.3.0
 	 * @return string
 	 */
 	public function maybe_add_meetup_link_to_event( $content = '' ) {
@@ -67,7 +67,7 @@ class TMI_Event_Display {
 	/**
 	 * Build link HTML from text and URL
 	 *
-	 * @since  NEXT
+	 * @since  0.3.0
 	 * @return string
 	 */
 	public function construct_link_html() {
