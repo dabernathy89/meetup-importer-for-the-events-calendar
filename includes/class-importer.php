@@ -109,6 +109,7 @@ class TMI_Importer {
 		$new_event_id = tribe_create_event( $args );
 		if ( $new_event_id ) {
 			update_post_meta( $new_event_id, '_tec_meetup_import_event_id', $event['id'] );
+			update_post_meta( $new_event_id, '_tec_meetup_import_event_link', $event['link'] );
 
 			// Associate the event categories from the import to this new event.
 			$event_cats = wp_get_post_terms( $post_id, 'tribe_events_cat' );

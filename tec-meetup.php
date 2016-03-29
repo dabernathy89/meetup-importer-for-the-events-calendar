@@ -163,6 +163,14 @@ class Tec_Meetup_Importer {
 	protected $importer;
 
 	/**
+	 * Instance of TMI_Event_Display
+	 *
+	 * @since NEXT
+	 * @var TMI_Event_Display
+	 */
+	protected $event_display;
+
+	/**
 	 * Creates or returns an instance of this class.
 	 *
 	 * @since  0.2.0
@@ -201,6 +209,7 @@ class Tec_Meetup_Importer {
 		$this->delete_import = new TMI_Delete_Import( $this );
 		$this->cron = new TMI_Cron( $this );
 		$this->importer = new TMI_Importer( $this );
+		$this->event_display = new TMI_Event_Display( $this );
 	} // END OF PLUGIN CLASSES FUNCTION
 
 	public function enqueue_admin_css( $hook ) {
@@ -325,6 +334,7 @@ class Tec_Meetup_Importer {
 			case 'delete_import':
 			case 'cron':
 			case 'importer':
+			case 'event_display':
 				return $this->$field;
 			default:
 				throw new Exception( 'Invalid '. __CLASS__ .' property: ' . $field );
