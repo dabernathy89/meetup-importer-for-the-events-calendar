@@ -92,6 +92,7 @@ class TMI_Importer {
 
 			if ( $existing_event_id ) {
 				tribe_update_event( $existing_event_id, $args );
+				do_action( 'tec_meetup_event_updated', $existing_event_id, $args );
 			} else {
 				$this->create_new_event( $event, $args, $post_id );
 			}
@@ -110,6 +111,7 @@ class TMI_Importer {
 		if ( $new_event_id ) {
 			update_post_meta( $new_event_id, '_tec_meetup_import_event_id', $event['id'] );
 			update_post_meta( $new_event_id, '_tec_meetup_import_event_link', $event['link'] );
+			update_post_meta( $new_event_id, '_tec_meetup_import_event_raw_data', json_encode( $event ) );
 
 			// Associate the event categories from the import to this new event.
 			$event_cats = wp_get_post_terms( $post_id, 'tribe_events_cat' );
@@ -123,6 +125,8 @@ class TMI_Importer {
 					wp_set_object_terms( $new_event_id, $term_ids, 'tribe_events_cat' );
 				}
 			}
+
+			do_action( 'tec_meetup_new_event_imported', $new_event_id, $args, $event );
 		}
 	}
 
