@@ -1,8 +1,8 @@
 <?php
 /**
- * Meetup.com Importer for The Events Calendar Cron
+ * Event Importer for Meetup and The Events Calendar Cron
  * @version 0.2.0
- * @package Meetup.com Importer for The Events Calendar
+ * @package Event Importer for Meetup and The Events Calendar
  */
 
 class TMI_Cron {

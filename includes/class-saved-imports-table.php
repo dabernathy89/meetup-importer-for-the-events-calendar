@@ -5,9 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Meetup.com Importer for The Events Calendar Saved Imports Table
+ * Event Importer for Meetup and The Events Calendar Saved Imports Table
  * @version 0.2.0
- * @package Meetup.com Importer for The Events Calendar
+ * @package Event Importer for Meetup and The Events Calendar
  */
 
 if ( !class_exists( 'WP_List_Table' ) ) {

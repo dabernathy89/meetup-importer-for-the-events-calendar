@@ -2,7 +2,7 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Meetup.com Importer for The Events Calendar 0.2.0\n"
+"Project-Id-Version: Event Importer for Meetup and The Events Calendar 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tec-meetup\n"
 "POT-Creation-Date: 2016-03-26 18:25:54+00:00\n"
 "MIME-Version: 1.0\n"
@@ -151,13 +151,13 @@ msgstr ""
 
 #: tec-meetup.php:313
 msgid ""
-"Meetup.com Importer for The Events Calendar is missing requirements and has "
+"Event Importer for Meetup and The Events Calendar is missing requirements and has "
 "been <a href=\"%s\">deactivated</a>. Please make sure all requirements are "
 "available."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "Meetup.com Importer for The Events Calendar"
+msgid "Event Importer for Meetup and The Events Calendar"
 msgstr ""
 
 #. Description of the plugin/theme

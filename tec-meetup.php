@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Meetup.com Importer for The Events Calendar
+ * Plugin Name: Event Importer for Meetup and The Events Calendar
  * Description: Automatically import events from Meetup.com into The Events Calendar.
  * Version:     0.2.0
  * Author:      dabernathy89
@@ -310,7 +310,7 @@ class Tec_Meetup_Importer {
 	public function requirements_not_met_notice() {
 		// Output our error.
 		echo '<div id="message" class="error">';
-		echo '<p>' . sprintf( __( 'Meetup.com Importer for The Events Calendar is missing requirements and has been <a href="%s">deactivated</a>. Please make sure all requirements are available.', 'tec-meetup' ), admin_url( 'plugins.php' ) ) . '</p>';
+		echo '<p>' . sprintf( __( 'Event Importer for Meetup and The Events Calendar is missing requirements and has been <a href="%s">deactivated</a>. Please make sure all requirements are available.', 'tec-meetup' ), admin_url( 'plugins.php' ) ) . '</p>';
 		echo '</div>';
 	}
 
