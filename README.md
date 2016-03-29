@@ -4,7 +4,7 @@
 **Tags:**              meetup, calendar, events
 **Requires at least:** 4.4
 **Tested up to:**      4.4
-**Stable tag:**        0.2.0
+**Stable tag:**        0.2.1
 **License:**           GPLv2
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,9 +16,7 @@ To get started, make sure that you have The Events Calendar plugin (by Modern Tr
 
 After you have both plugins installed, navigate to Events -> Import in your Dashboard, and click on the "Meetup.com" tab. From there you only need to fill in the URL for a Meetup group, select the Event Categories you want it to be mapped to, and hit "Add Recurring Import". This will schedule a script to run twice a day to import the upcoming events from that group into The Events Calendar.
 
-A few notes:
-
-**This is an early release of this plugin, so it's a little barebones. Help make it better by contributing yourself - see below!**
+*This is an early release of this plugin, so it's a little barebones. Help make it better by contributing yourself - see below!*
 
 ### Contributing ###
 
@@ -38,6 +36,9 @@ I am not affiliated with Meetup, Inc or Modern Tribe (developers of The Events C
 2. Activate Event Importer for Meetup and The Events Calendar through the 'Plugins' menu in WordPress.
 
 ## Changelog ##
+
+### 0.2.1 ###
+* Update plugin name and readme
 
 ### 0.2.0 ###
 * Initial public release

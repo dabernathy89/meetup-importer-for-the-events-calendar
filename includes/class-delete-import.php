@@ -1,7 +1,7 @@
 <?php
 /**
  * Event Importer for Meetup and The Events Calendar Delete Import
- * @version 0.2.0
+ * @version 0.2.1
  * @package Event Importer for Meetup and The Events Calendar
  */
 
