@@ -3,7 +3,7 @@
 **Donate link:**       https://paypal.me/DanielAbernathy
 **Tags:**              meetup, calendar, events
 **Requires at least:** 4.4
-**Tested up to:**      4.4
+**Tested up to:**      4.6
 **Stable tag:**        0.3.1
 **License:**           GPLv2
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
