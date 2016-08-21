@@ -225,7 +225,7 @@ class TMI_Importer {
 			'posts_per_page' => 1,
 			'post_type' => 'tribe_venue',
 			'meta_key' => '_tec_meetup_import_venue_id',
-			'meta_val' => $event['venue']['id']
+			'meta_value' => $event['venue']['id']
 		) );
 
 		if ( is_array( $existing_venues ) && !empty( $existing_venues ) ) {
