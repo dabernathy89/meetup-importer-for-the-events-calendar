@@ -44,6 +44,9 @@ I am not affiliated with Meetup, Inc or Modern Tribe (developers of The Events C
 
 ## Changelog ##
 
+### 0.3.1 ###
+* Bug fix: multiple venues were not importing correctly
+
 ### 0.3.0 ###
 * Add option to display an event's Meetup.com link
 
